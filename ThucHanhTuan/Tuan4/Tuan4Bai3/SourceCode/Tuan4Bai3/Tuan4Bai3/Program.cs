@@ -14,28 +14,28 @@ namespace Tuan4Bai3
                
              Console.OutputEncoding = Encoding.UTF8;
 
-            Console.WriteLine("Viết một chương trình Test để kiểm tra tất cả các hành vi (phương thức, toán tử) của lớp này.\n");
-            Console.Write("(Default constructor) test0 là: ");
-            KhongGianNChieu test0 = new KhongGianNChieu();
-            Console.WriteLine(test0.ToString());
+            Console.WriteLine("Viết một chương trình _Test để kiểm tra tất cả các hành vi (phương thức, toán tử) của lớp này.\n");
+            Console.Write("(Default constructor) _Test0 là: ");
+            MultidimensionalSpace _Test0 = new MultidimensionalSpace();
+            Console.WriteLine(_Test0.ToString());
 
-            Console.Write("(Constructor int SoChieu) Gốc tọa độ test1 5 chiều là: ");
-            KhongGianNChieu test1 = new KhongGianNChieu(5);
-            Console.WriteLine(test1.ToString());
+            Console.Write("(Constructor int SoChieu) Tọa độ _Test1 5 chiều là: ");
+            MultidimensionalSpace _Test1 = new MultidimensionalSpace(5);
+            Console.WriteLine(_Test1.ToString());
 
-            List<double> input = new List<double>() { 1,2,3,4,5}; 
-            KhongGianNChieu test2 = new KhongGianNChieu(input);
-            Console.Write("(Constructor List tọa độ) Gốc tọa độ test2 là: ");
-            Console.WriteLine(test2.ToString());
+            List<double> _ArrayExample = new List<double>() { 1,2,3,4,5}; 
+            MultidimensionalSpace _Test2 = new MultidimensionalSpace(_ArrayExample);
+            Console.Write("(Constructor List tọa độ) Tọa độ _Test2 là: ");
+            Console.WriteLine(_Test2.ToString());
 
 
-            Console.WriteLine("Điểm test2 có khoảng cách với gốc tọa độ là: " + test2.KhoangCachGocToaDo());
-            Console.WriteLine("Điểm test2 có điểm đối xứng qua gốc tọa độ là: " + test2.DiemDoiXungToaDo());
+            Console.WriteLine("Điểm _Test2 có khoảng cách với gốc tọa độ là: " + _Test2.OriginDistanceO());
+            Console.WriteLine("Điểm _Test2 có điểm đối xứng qua gốc tọa độ là: " + _Test2.PointSymmetryOriginDistanceO());
 
             Console.WriteLine("\nCác toán tử:  cộng, trừ, nhân: ");
-            Console.WriteLine(" test2 + test1 =  " + (test2 + test1).ToString());
-            Console.WriteLine(" test2 - test1 = " + (test2 - test1).ToString());
-            Console.WriteLine(" test2 * test1 = " + (test2 * test1).ToString());
+            Console.WriteLine(" _Test2 + _Test1 =  " + (_Test2 + _Test1).ToString());
+            Console.WriteLine(" _Test2 - _Test1 = " + (_Test2 - _Test1).ToString());
+            Console.WriteLine(" _Test2 * _Test1 = " + (_Test2 * _Test1).ToString());
 
 
             Console.WriteLine("\nPress any key!");

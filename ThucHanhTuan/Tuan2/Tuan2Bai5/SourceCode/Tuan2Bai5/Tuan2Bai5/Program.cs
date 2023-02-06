@@ -6,10 +6,17 @@
 using System;
 using System.Text;
 
-namespace Tuan2Bai5 {
-    internal class Program {
-        static void Main(string[] args) {
-            Console.OutputEncoding=Encoding.UTF8;
+namespace Tuan2Bai5
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.OutputEncoding = Encoding.UTF8; 
+
+
+            // Không chia thành class vì nếu dùng trong class sẽ là tham chiếu
+ 
 
             //Kiểu dữ liệu tham chiếu 
             int _MyId = 20206205;
@@ -18,13 +25,13 @@ namespace Tuan2Bai5 {
             Console.WriteLine($"Kiểu dữ liệu tham chiếu: {_MyId}");
             Console.WriteLine($"Kiểu dữ liệu tham trị: {_RefValue}");
             //Chuyển đổi kiểu dữ liệu tham chiếu sang tham trị 
-            _RefValue=_MyId+20000000;
+            _RefValue = _MyId + 20000000;
             Console.WriteLine($"Chuyển đổi kiểu dữ liệu tham chiếu sang tham trị: {_RefValue}");
             //Chuyển đổi kiểu dữ liệu tham trị sang tham chiếu 
             int number = 10;
-            Console.WriteLine("Kiểu dữ liệu tham trị: "+number);
+            Console.WriteLine("Kiểu dữ liệu tham trị: " + number);
             ConvertToReference(number);
-            Console.WriteLine("Chuyển đổi kiểu dữ liệu tham trị sang tham chiếu: "+number);
+            Console.WriteLine("Chuyển đổi kiểu dữ liệu tham trị sang tham chiếu: " + number);
             //Trường hợp truyền tham số tham trị mà lại thay đổi giá trị
             ChangeValue(ref _MyId);
             Console.WriteLine($"Chuyển đổi kiểu dữ liệu tham trị sang tham chiếu: {_MyId}");
@@ -33,15 +40,18 @@ namespace Tuan2Bai5 {
             Console.WriteLine($"Trường hợp truyền tham trị mà không bị thay đổi giá trị: {_MyId}");
 
         }
-        static void ConvertToReference(int value) {
+        static void ConvertToReference(int value)
+        {
             object objValue = value;
-            Console.WriteLine("Kiểu dữ liệu tham chiếu: "+objValue);
+            Console.WriteLine("Kiểu dữ liệu tham chiếu: " + objValue);
         }
-        static void ChangeValue(ref int iValue) {
-            iValue=iValue+10000000;
+        static void ChangeValue(ref int iValue)
+        {
+            iValue = iValue + 10000000;
         }
 
-        static void KeepValue(int iValue) {
+        static void KeepValue(int iValue)
+        {
         }
     }
 }

@@ -12,54 +12,54 @@ namespace Tuan4Bai1
                
             Console.OutputEncoding = Encoding.UTF8;
             Console.WriteLine("Constructor – không tham số:");
-            CSinhVien test1 = new CSinhVien();
-            Console.WriteLine(test1.ToString());
+            Student _Test1 = new Student();
+            Console.WriteLine(_Test1.Display());
             Console.WriteLine("Constructor – Có 2 tham số: họ tên, tuổi");
-            CSinhVien test2 = new CSinhVien("Sinh viên A", 22);
-            Console.WriteLine(test2.ToString());
+            Student _Test2 = new Student("Sinh viên A", 22);
+            Console.WriteLine(_Test2.Display());
 
-            Console.WriteLine("test3");
-            CSinhVien test3 = new CSinhVien("Sinh viên A", 22, "Nam", 9.5, 9.5, 9.5);
-            Console.WriteLine(test3.ToString());
+            Console.WriteLine("_Test3");
+            Student _Test3 = new Student("Sinh viên A", 22, "Nam", 9.5, 9.5, 9.5);
+            Console.WriteLine(_Test3.Display());
 
-            Console.WriteLine("test4");
-            CSinhVien test4 = new CSinhVien("Sinh viên A", 22, "Nam", 8.5, 8.5, 8.5);
-            Console.WriteLine(test4.ToString());
+            Console.WriteLine("_Test4");
+            Student _Test4 = new Student("Sinh viên A", 22, "Nam", 8.5, 8.5, 8.5);
+            Console.WriteLine(_Test4.Display());
 
-            Console.WriteLine("test5");
-            CSinhVien test5 = new CSinhVien("Sinh viên A", 22, "Nam", 7.5, 7.5, 7.5);
-            Console.WriteLine(test5.ToString());
+            Console.WriteLine("_Test5");
+            Student _Test5 = new Student("Sinh viên A", 22, "Nam", 7.5, 7.5, 7.5);
+            Console.WriteLine(_Test5.Display());
 
-            Console.WriteLine("test6");
-            CSinhVien test6 = new CSinhVien("Sinh viên A", 22, "Nam", 6.5, 6.5, 6.5);
-            Console.WriteLine(test6.ToString());
+            Console.WriteLine("_Test6");
+            Student _Test6 = new Student("Sinh viên A", 22, "Nam", 6.5, 6.5, 6.5);
+            Console.WriteLine(_Test6.Display());
 
-            Console.WriteLine("test7");
-            CSinhVien test7 = new CSinhVien("Sinh viên A", 22, "Nam", 5.5, 5.5, 5.5);
-            Console.WriteLine(test7.ToString());
+            Console.WriteLine("_Test7");
+            Student _Test7 = new Student("Sinh viên A", 22, "Nam", 5.5, 5.5, 5.5);
+            Console.WriteLine(_Test7.Display());
 
             Console.WriteLine("Cộng 2 sinh viên: lấy thông tin của sv1; học bổng = tổng học bổng của 2 sv");
-            CSinhVien test8 = new CSinhVien();
-            test8 = test7 + test3;
-            Console.Write("test7 + test3: ");
-            Console.WriteLine(test8.ToString());
+            Student _Test8 = new Student();
+            _Test8 = _Test7 + _Test3;
+            Console.Write("_Test7 + _Test3: ");
+            Console.WriteLine(_Test8.Display());
 
-            Console.Write("So sánh 2 sinh viên test5 >= test6: ");
-            Console.WriteLine(test5 >= test6);
+            Console.Write("So sánh 2 sinh viên _Test5 >= _Test6: ");
+            Console.WriteLine(_Test5 >= _Test6);
 
-            Console.Write("So sánh 2 sinh viên test6 <= test7: ");
-            Console.WriteLine(test6 <= test7);
+            Console.Write("So sánh 2 sinh viên _Test6 <= _Test7: ");
+            Console.WriteLine(_Test6 <= _Test7);
            
 
 
             Console.WriteLine("Ví dụ sử dụng cho 2 sinh viên 2007.");
-            CSinhVien2007 test9 = new CSinhVien2007("Sinh viên A", 22, "Nam", 5.5, 5.5, 5.5,2);
-            Console.WriteLine(test9.ToString());
-            CSinhVien2007 test10 = new CSinhVien2007("Sinh viên B", 22, "Nam", 5.5, 5.5, 5.5,3);
-            Console.WriteLine(test10.ToString());
+            Student2007 _Test9 = new Student2007("Sinh viên A", 22, "Nam", 5.5, 5.5, 5.5,2);
+            Console.WriteLine(_Test9.Display());
+            Student2007 _Test10 = new Student2007("Sinh viên B", 22, "Nam", 5.5, 5.5, 5.5,3);
+            Console.WriteLine(_Test10.Display());
 
-            Console.WriteLine("test9 + test10: ");
-            Console.WriteLine((test9 + test10).ToString());
+            Console.WriteLine("_Test9 + _Test10: ");
+            Console.WriteLine((_Test9 + _Test10).Display());
 
              Console.WriteLine("\nPress any key!");
             Console.ReadKey();

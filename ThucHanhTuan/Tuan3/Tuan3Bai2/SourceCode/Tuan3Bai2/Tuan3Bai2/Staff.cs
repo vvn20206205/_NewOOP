@@ -1,42 +1,29 @@
-﻿public class Staff : Employee
+﻿public class Staff : AEmployee
 {
-    public string title;
-    public string Title
+    private string title;
+
+    public string Title { get => title; set => title=value; }
+
+    public Staff(string iName, string iPhoneNumber, string iEmailAddress, string iDepartment, double iSalary, DateTime iDateHire,   string iTitle)
     {
-        get
-        {
-            return title;
-        }
-        set
-        {
-            title = value;
-        }
+        Name = iName;
+        PhoneNumber = iPhoneNumber;
+        EmailAddress = iEmailAddress;
+        Department = iDepartment;
+        Salary = iSalary;
+        DateHire = iDateHire;
+        Title = iTitle;
     }
-    public override double CalculateBonus()
-    {
-        return 0.06 * Salary;
-    }
-    public override int CalculateVacation()
-    {
-        TimeSpan time = DateTime.Now - DateHire;
-        if (time.Days / 365 > 5)
-        {
+    public override int CalculateVacation() {
+        TimeSpan _time = DateTime.Now-DateHire;
+        if(_time.Days/365>5) {
             return 4;
-        }
-        else
-        {
+        } else {
             return 3;
         }
     }
-    public Staff(string name, string phoneNumber, string emailAddress, string department, double salary, DateTime dateHire,   string title)
-    {
-        Name = name;
-        PhoneNumber = phoneNumber;
-        EmailAddress = emailAddress;
-        Department = department;
-        Salary = salary;
-        DateHire = dateHire;
-        Title = title;
+    public override double CalculateBonus() {
+        return 0.06*Salary;
     }
     public override string ToString()
     {

@@ -1,5 +1,5 @@
 ﻿using System;
-internal class Complex {
+public class Complex {
     private double real;
     private double imaginary;
 
@@ -48,7 +48,7 @@ internal class Complex {
     public string Display() {
         return ("Số phức đã nhập là: "+ToString());
     }
-    override public string ToString() {
+     public override string ToString() {
         string _OutputString = "";
         if(Real==0&&Imaginary==0) {
             _OutputString+="0";

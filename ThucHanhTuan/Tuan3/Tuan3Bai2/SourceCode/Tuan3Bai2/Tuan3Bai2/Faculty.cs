@@ -1,39 +1,21 @@
-﻿public class Faculty : Employee
+﻿public class Faculty : AEmployee
 {
     private string officeHours;
     private string rank;
-    public string OfficeHours
+
+    public string OfficeHours { get => officeHours; set => officeHours=value; }
+    public string Rank { get => rank; set => rank=value; }
+
+    public Faculty(string iName, string iPhoneNumber, string iEmailAddress, string iDepartment, double iSalary, DateTime iDateHire, string iOfficeHours, string iRank)
     {
-        get
-        {
-            return officeHours;
-        }
-        set
-        {
-            officeHours = value;
-        }
-    }
-    public string Rank
-    {
-        get
-        {
-            return rank;
-        }
-        set
-        {
-            rank = value;
-        }
-    }
-    public Faculty(string name, string phoneNumber, string emailAddress, string department, double salary, DateTime dateHire, string officeHours, string rank)
-    {
-        Name = name;
-        PhoneNumber = phoneNumber;
-        EmailAddress = emailAddress;
-        Department = department;
-        Salary = salary;
-        DateHire = dateHire;
-        OfficeHours = officeHours;
-        Rank = rank;
+        Name =iName;
+        PhoneNumber = iPhoneNumber;
+        EmailAddress = iEmailAddress;
+        Department = iDepartment;
+        Salary = iSalary;
+        DateHire = iDateHire;
+        OfficeHours = iOfficeHours;
+        Rank = iRank;
     }
 
     public override string ToString()
@@ -57,8 +39,8 @@
     }
     public override int CalculateVacation()
     {
-        TimeSpan time = DateTime.Now - DateHire;
-        if (time.Days / 365 > 3)
+        TimeSpan _time = DateTime.Now - DateHire;
+        if (_time.Days / 365 > 3)
         {
             if (Rank.Equals("Senior Lecturer"))
             {

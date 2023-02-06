@@ -1,24 +1,15 @@
 ﻿public class Student : Person
 {
-    private string nameProgram;
-    public string NameProgram
+    private string nameProgram; 
+    public string NameProgram { get => nameProgram; set => nameProgram=value; }
+    public Student(string iName,string iPhoneNumber, string iEmailAddress, string iNameProgram)
     {
-        get
-        {
-            return nameProgram;
-        }
-        set
-        {
-            nameProgram = value;
-        }
+        Name = iName;
+        PhoneNumber = iPhoneNumber;
+        EmailAddress = iEmailAddress;
+        NameProgram = iNameProgram;
     }
-    public Student(string name, string phoneNumber, string emailAddress, string nameProgram)
-    {
-        Name = name;
-        PhoneNumber = phoneNumber;
-        EmailAddress = emailAddress;
-        NameProgram = nameProgram;
-    }
+
 
     public override string ToString()
     {

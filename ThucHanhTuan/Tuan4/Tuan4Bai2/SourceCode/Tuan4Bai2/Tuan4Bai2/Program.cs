@@ -15,22 +15,22 @@ namespace Tuan4Bai2
             Console.OutputEncoding = Encoding.UTF8;
             Console.WriteLine("Viết một chương trình Test để kiểm tra tất cả các hành vi (phương thức, toán tử) của lớp này.\n");
             Console.Write("Gốc tọa độ là: ");
-            POINT test0 = new POINT();
-            Console.WriteLine(test0.ToString());
+            Point _Test0 = new Point();
+            Console.WriteLine(_Test0.ToString());
 
-            POINT test1 = new POINT(1,1);
-            Console.Write("\nĐiểm test1 có tọa độ: ");
-            Console.WriteLine(test1.ToString());
+            Point _Test1 = new Point(1,1);
+            Console.Write("\nĐiểm _Test1 có tọa độ: ");
+            Console.WriteLine(_Test1.ToString());
 
-            Console.WriteLine("Điểm test1 có khoảng cách với gốc tọa độ là: "+test1.KhoangCachGocToaDo());
-            Console.WriteLine("Điểm test1 có điểm đối xứng qua trục tung là: "+test1.DiemDoiXungTrucTung());
-            Console.WriteLine("Điểm test1 có điểm đối xứng qua trục hoành là: "+test1.DiemDoiXungTrucHoanh());
-            Console.WriteLine("Điểm test1 có điểm đối xứng qua gốc tọa độ là: " + test1.DiemDoiXungToaDo());
+            Console.WriteLine("Điểm _Test1 có khoảng cách với gốc tọa độ là: "+_Test1.OriginDistanceO());
+            Console.WriteLine("Điểm _Test1 có điểm đối xứng qua trục tung là: "+_Test1.PointSymmetryVerticalAxis());
+            Console.WriteLine("Điểm _Test1 có điểm đối xứng qua trục hoành là: "+_Test1.PointSymmetryHorizontalAxis());
+            Console.WriteLine("Điểm _Test1 có điểm đối xứng qua gốc tọa độ là: " + _Test1.PointSymmetryOriginDistanceO());
            
             Console.WriteLine("\nCác toán tử:  cộng, trừ, nhân: "  );
-            Console.WriteLine(" test1 + test0 =  "+ (test1 + test0).ToString());
-            Console.WriteLine(" test1 - test0 = "+( test1 - test0 ).ToString());
-            Console.WriteLine(" test1 * test0 = "+( test1 * test0 ).ToString());
+            Console.WriteLine(" _Test1 + _Test0 =  "+ (_Test1 + _Test0).ToString());
+            Console.WriteLine(" _Test1 - _Test0 = "+( _Test1 - _Test0 ).ToString());
+            Console.WriteLine(" _Test1 * _Test0 = "+( _Test1 * _Test0 ).ToString());
 
 
             Console.WriteLine("\nPress any key!");

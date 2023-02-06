@@ -37,12 +37,14 @@ namespace Tuan2Bai3 {
                         Console.WriteLine("Nhập hệ số b,c:");
                         Console.Write("Nhập hệ số b (VD: 3+5i): ");
                         Complex _inputQuadraticFactor1 = new Complex();
-                        _inputQuadraticFactor1.SetInputComplex();
-                        _inputQuadraticFactor1.XuatSoPhuc();
+                        string _inputString = Console.ReadLine();
+                        _inputQuadraticFactor1.SetInputComplex(_inputString);
+                        Console.WriteLine(_inputQuadraticFactor1.Display());
                         Console.Write("Nhập hệ số c (VD: 3+5i): ");
                         Complex _inputQuadraticFactor0 = new Complex();
-                        _inputQuadraticFactor0.SetInputComplex();
-                        _inputQuadraticFactor0.XuatSoPhuc();
+                        _inputString=Console.ReadLine();
+                        _inputQuadraticFactor0.SetInputComplex(_inputString);
+                        Console.WriteLine(_inputQuadraticFactor0.Display());
                         FirstDegreeEquation _Equation1 = new FirstDegreeEquation(_inputQuadraticFactor1,_inputQuadraticFactor0);
 
                         Console.WriteLine(_Equation1.Display());
@@ -60,16 +62,19 @@ namespace Tuan2Bai3 {
                         Console.WriteLine("Nhập hệ số a,b,c:");
                         Console.Write("Nhập hệ số a (VD: 3+5i): ");
                         Complex _inputQuadraticFactor2 = new Complex();
-                        _inputQuadraticFactor2.SetInputComplex();
-                        _inputQuadraticFactor2.XuatSoPhuc();
+                        _inputString=Console.ReadLine();
+                        _inputQuadraticFactor2.SetInputComplex(_inputString);
+                        Console.WriteLine(_inputQuadraticFactor2.Display());
                         Console.Write("Nhập hệ số b (VD: 3+5i): ");
                         _inputQuadraticFactor1=new Complex();
-                        _inputQuadraticFactor1.SetInputComplex();
-                        _inputQuadraticFactor1.XuatSoPhuc();
+                        _inputString=Console.ReadLine();
+                        _inputQuadraticFactor1.SetInputComplex(_inputString);
+                        Console.WriteLine(_inputQuadraticFactor1.Display());
                         Console.Write("Nhập hệ số c (VD: 3+5i): ");
                         _inputQuadraticFactor0=new Complex();
-                        _inputQuadraticFactor0.SetInputComplex();
-                        _inputQuadraticFactor0.XuatSoPhuc();
+                        _inputString=Console.ReadLine();
+                        _inputQuadraticFactor0.SetInputComplex(_inputString);
+                        Console.WriteLine(_inputQuadraticFactor0.Display());
                         QuadraticEquation _Equation2 = new QuadraticEquation(_inputQuadraticFactor2,_inputQuadraticFactor1,_inputQuadraticFactor0);
 
                         Console.WriteLine(_Equation2.Display());

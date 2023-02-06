@@ -1,67 +1,45 @@
-﻿// class POINT
-public class POINT
-{
-    // Thuộc tính POINT
+﻿using System.Drawing;
 
-    private double toaDoX;
-    private double toaDoY;
-    // Properties POINT
-    public double ToaDoX
-    {
-        get { return toaDoX; }
-        set { toaDoX = value; }
+public class Point {
+    private double coordinatesX;
+    private double coordinatesY;
+
+    public double CoordinatesX { get => coordinatesX; set => coordinatesX=value; }
+    public double CoordinatesY { get => coordinatesY; set => coordinatesY=value; }
+
+    public Point() {
+        CoordinatesX=0;
+        CoordinatesY=0;
     }
-    public double ToaDoY
-    {
-        get { return toaDoY; }
-        set { toaDoY = value; }
-    }
-    // POINT constructor
-    // Default constructor
-    public POINT()
-    {
-        ToaDoX = 0;
-        ToaDoY = 0;
-    }
-    public POINT(double toaDoX, double toaDoY)
-    {
-        ToaDoX = toaDoX;
-        ToaDoY = toaDoY;
+    public Point(double iCoordinatesX,double iCoordinatesY) {
+        CoordinatesX=iCoordinatesX;
+        CoordinatesY=iCoordinatesY;
     }
 
-    // POINT method
-
-    public double KhoangCachGocToaDo()
-    {
-        return Math.Sqrt(ToaDoX * ToaDoX + ToaDoY * ToaDoY);
+    public double OriginDistanceO() {
+        return Math.Sqrt(CoordinatesX*CoordinatesX+CoordinatesY*CoordinatesY);
     }
-    public POINT DiemDoiXungTrucTung()
-    {
-        return new POINT(-ToaDoX, ToaDoY);
+    public Point PointSymmetryVerticalAxis() {
+        return new Point(-CoordinatesX,CoordinatesY);
     }
-    public POINT DiemDoiXungTrucHoanh()
-    {
-        return new POINT(ToaDoX, -ToaDoY);
+    public Point PointSymmetryHorizontalAxis() {
+        return new Point(CoordinatesX,-CoordinatesY);
     }
-    public POINT DiemDoiXungToaDo()
-    {
-        return new POINT(-ToaDoX, -ToaDoY);
+    public Point PointSymmetryOriginDistanceO() {
+        
+        return new Point(-CoordinatesX,-CoordinatesY);
     }
-    public override string ToString()
-    {
-        return $"ToaDoX: {ToaDoX}, ToaDoY: {ToaDoY}";
+    public override string ToString() {
+        return $"CoordinatesX: {CoordinatesX}, CoordinatesY: {CoordinatesY}";
     }
     // Các toán tử:  cộng, trừ, nhân
-    public static POINT operator +(POINT a, POINT b)
-    {
-        return new POINT(a.ToaDoX + b.ToaDoX, a.ToaDoY + b.ToaDoY);
+    public static Point operator +(Point iPoint1,Point iPoint2) {
+        return new Point(iPoint1.CoordinatesX+iPoint2.CoordinatesX,iPoint1.CoordinatesY+iPoint2.CoordinatesY);
     }
-    public static POINT operator -(POINT a, POINT b)
-    {
-        return new POINT(a.ToaDoX - b.ToaDoX, a.ToaDoY - b.ToaDoY);
+    public static Point operator -(Point iPoint1,Point iPoint2) {
+        return new Point(iPoint1.CoordinatesX-iPoint2.CoordinatesX,iPoint1.CoordinatesY-iPoint2.CoordinatesY);
     }
-    public static POINT operator *(POINT a, POINT b)
-    {
-        return new POINT(a.ToaDoX * b.ToaDoX, a.ToaDoY * b.ToaDoY);
+    public static Point operator *(Point iPoint1,Point iPoint2) {
+        return new Point(iPoint1.CoordinatesX*iPoint2.CoordinatesX,iPoint1.CoordinatesY*iPoint2.CoordinatesY);
     }
 }

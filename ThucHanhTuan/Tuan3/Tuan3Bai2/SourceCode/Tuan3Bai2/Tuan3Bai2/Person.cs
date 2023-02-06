@@ -1,50 +1,21 @@
 ﻿public abstract class Person
 {
-    protected string name;
-    protected string phoneNumber;
-    protected string emailAddress;
-    public string Name
-    {
-        get
-        {
-            return name;
-        }
-        set
-        {
-            name = value;
-        }
-    }
-    public string PhoneNumber
-    {
-        get
-        {
-            return phoneNumber;
-        }
-        set
-        {
-            phoneNumber = value;
-        }
-    }
-    public string EmailAddress
-    {
-        get
-        {
-            return emailAddress;
-        }
-        set
-        {
-            emailAddress = value;
-        }
-    }
-    // Default construct 
+    private string name;
+    private string phoneNumber;
+    private string emailAddress;
+
+    protected string Name { get => name; set => name=value; }
+    protected string PhoneNumber { get => phoneNumber; set => phoneNumber=value; }
+    protected string EmailAddress { get => emailAddress; set => emailAddress=value; }
+
     protected Person()
     {
     }
-    protected Person(string name, string phoneNumber, string emailAddress)
+    protected Person(string iName, string iPhoneNumber, string iEmailAddress)
     {
-        Name = name;
-        PhoneNumber = phoneNumber;
-        EmailAddress = emailAddress;
+        Name = iName;
+        PhoneNumber = iPhoneNumber;
+        EmailAddress = iEmailAddress;
     }
     public override string ToString()
     {
