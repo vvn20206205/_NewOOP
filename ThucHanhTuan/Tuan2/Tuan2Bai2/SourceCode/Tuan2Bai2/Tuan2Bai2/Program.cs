@@ -4,23 +4,23 @@ namespace Tuan2Bai2 {
 
     internal class Program {
         static void Main(string[] args) {
-     
-            try {
-               
-                 Console.OutputEncoding=Encoding.UTF8;
-            TestMethodOfEmployee();
 
-         
-            Console.WriteLine("\nPress any key!");
-            Console.ReadKey();
-   
+            try {
+
+                Console.OutputEncoding=Encoding.UTF8;
+                TestMethodOfEmployee();
+
+
+                Console.WriteLine("\nPress any key!");
+                Console.ReadKey();
+
             } catch(Exception ex) {
-                   Console.WriteLine(ex.Message);
-            Console.WriteLine("\nPress any key!");
-            Console.ReadKey();
+                Console.WriteLine(ex.Message);
+                Console.WriteLine("\nPress any key!");
+                Console.ReadKey();
             }
-      
-            }
+
+        }
         public static void TestMethodOfEmployee() {
             Console.WriteLine("Viết một chương trình Test để kiểm tra tất cả các hành vi của lớp Employee.");
 

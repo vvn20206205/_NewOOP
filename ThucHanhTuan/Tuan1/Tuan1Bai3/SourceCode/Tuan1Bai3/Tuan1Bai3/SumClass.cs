@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace Tuan1Bai3 {
-    class Sum {
+    class SumClass {
         #region Fields
         private int begin;
         private int end;
@@ -15,7 +15,7 @@ namespace Tuan1Bai3 {
         public int End { get => end; set => end=value; }
         #endregion
         #region Constructor
-        public Sum(int iBegin,int iEnd) {
+        public SumClass(int iBegin,int iEnd) {
             begin=iBegin;
             end=iEnd;
         }

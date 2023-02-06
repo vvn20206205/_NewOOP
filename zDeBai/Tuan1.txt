@@ -1,0 +1,16 @@
+Thực hành tuần 1
+THIẾT LẬP MÔI TRƯỜNG LÀM VIỆC
+1. 👉 Cài đặt Visual studio.Net
+2. 👉 Viết chương trình hello world
+3. 👉 Viết chương trình tính tổng từ 1-100
+4. 👉 Viết chương trình giải phương trình bậc hai
+5. 👉 Trình bày ý nghĩa của từng môn học trong chương trình đào tào và sự liên kết của nó
+Hướng dẫn nộp bài tập
+1. 👉 Làm theo bài tập yêu cầu trên máy của mình
+2. 👉 Chụp ảnh màn hình thực hiện vào phần COMMENT.
+❗ Ảnh cần có thông tin MSSV và họ và tên mới được tính.
+3. 👉 Up ảnh lên trên folder driver của mình (Gmail). Chú ý: Đặt tên chuẩn để theo dõi
+Tạo một folder cha có thông tin mã số sinh viên. VD: 20206112-Nguyễn Đức Anh
+Mỗi tuần có một folder con và đặt tên theo tuần. VD: Tuần 1
+4. 👉 Điền thông tin trên link Sổ bài tập về nhà. (làm 1 lần với tuần đầu tiên)
+5. 👉 Điền số lượng bài tập hoàn thành của tuần đó
