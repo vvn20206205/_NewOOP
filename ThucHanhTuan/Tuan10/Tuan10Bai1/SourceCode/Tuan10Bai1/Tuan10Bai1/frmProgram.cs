@@ -11,9 +11,27 @@ using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace Tuan10Bai1 {
     public partial class frmProgram : Form {
+        #region Fields
+        List<string> listMemory = new List<string>();
+        #endregion
+        #region Properties
+        #endregion
+        #region Constructor
         public frmProgram() {
             InitializeComponent();
         }
+        #endregion
+        #region Methods
+        private void FindResult() {
+            txtResult.Text=txtResult.Text.Replace("%","/100");
+            System.Data.DataTable _Table = new System.Data.DataTable();
+            double _Result = Convert.ToDouble(_Table.Compute(txtResult.Text," "));
+            txtResult.Text=(_Result).ToString();
+        }
+        #endregion
+        #region Operator
+        #endregion
+        #region Events
         private void Form1_Load(object sender,EventArgs e) {
         }
 
@@ -99,7 +117,6 @@ namespace Tuan10Bai1 {
         }
         private void btnResult_Click(object sender,EventArgs e) {
             FindResult();
-
         }
 
         private void btnsqrt_Click(object sender,EventArgs e) {
@@ -122,24 +139,20 @@ namespace Tuan10Bai1 {
 
             FindResult();
         }
+        private void btnMS_Click(object sender,EventArgs e) {
+            listMemory.Add(txtResult.Text);
+        }
         private void btnMC_Click(object sender,EventArgs e) {
-            MessageBox.Show("Chưa phát triển?");
+            listMemory.Clear();
         }
         private void btnMR_Click(object sender,EventArgs e) {
-            MessageBox.Show("Chưa phát triển?");
-        }
-        private void btnMS_Click(object sender,EventArgs e) {
-            MessageBox.Show("Chưa phát triển?");
+            int _LastIndex = listMemory.Count-1;
+            txtResult.Text=listMemory[_LastIndex];
+            listMemory.RemoveAt(_LastIndex);
         }
         private void btnMplus_Click(object sender,EventArgs e) {
-            MessageBox.Show("Chưa phát triển?");
+            listMemory.Add(txtResult.Text);
         }
-        private void FindResult() {
-
-            txtResult.Text=txtResult.Text.Replace("%","/100");
-            System.Data.DataTable table = new System.Data.DataTable();
-            double _result = Convert.ToDouble(table.Compute(txtResult.Text," "));
-            txtResult.Text=(_result).ToString();
-        }
+        #endregion
     }
 }

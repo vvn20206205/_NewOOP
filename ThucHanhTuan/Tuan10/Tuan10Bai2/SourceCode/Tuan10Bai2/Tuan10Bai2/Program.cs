@@ -14,7 +14,7 @@ namespace Tuan10Bai2 {
             try {
                 Application.EnableVisualStyles();
                 Application.SetCompatibleTextRenderingDefault(false);
-                Application.Run(new Form1());
+                Application.Run(new frmProgram());
             } catch(Exception ex) {
                 MessageBox.Show(ex.Message);
             }
