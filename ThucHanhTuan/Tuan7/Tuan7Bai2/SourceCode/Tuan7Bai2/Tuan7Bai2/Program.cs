@@ -7,7 +7,10 @@ namespace KiThuatLapTrinh {
         static int pixelInterval = 8;
         static double brightnessMultiplier = 1;
         static void Main() {
-            Console.OutputEncoding=System.Text.Encoding.UTF8;
+        
+            try {
+               
+              Console.OutputEncoding=System.Text.Encoding.UTF8;
             Console.WriteLine("Đây là phần mềm chuyển đổi ảnh thành file txt.");
             Console.WriteLine("Hãy nhập vào đường dẫn file ảnh:");
             Console.WriteLine("Ví dụ: \"C:/Tuan7Bai2/HUST.png\"");
@@ -17,6 +20,13 @@ namespace KiThuatLapTrinh {
             File.WriteAllText("../../../OUTPUT.txt","");
             ConvertToText();
 
+            } catch(Exception ex) {
+                   Console.WriteLine(ex.Message);
+            Console.WriteLine("\nPress any key!");
+            Console.ReadKey();
+            }
+      
+       
         }
 
         static void ConvertToText() {
@@ -38,7 +48,7 @@ namespace KiThuatLapTrinh {
             }
             Console.WriteLine("Chạy chương trình thành công!");
             Console.WriteLine("Kết quả: OUTPUT.txt");
-            Console.WriteLine("Nhấn phím bất kì kết thúc chương trình.");
+             Console.WriteLine("\nPress any key!");
             Console.ReadKey();
         }
 

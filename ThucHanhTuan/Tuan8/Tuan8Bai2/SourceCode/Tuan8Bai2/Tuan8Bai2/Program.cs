@@ -5,7 +5,10 @@ using System.Threading;
 using System.IO;
 class Session8 {
     static void Main(string[] args) {
-        Console.OutputEncoding=Encoding.Unicode;
+       
+            try {
+               
+           Console.OutputEncoding=Encoding.Unicode;
         Console.InputEncoding=Encoding.Unicode;
         Thread t = new Thread(() => { NewThread("First"); });
         Thread t2 = new Thread(() => { NewThread("Second"); });
@@ -18,7 +21,15 @@ class Session8 {
                 Console.WriteLine("Main thread exiting");
                 break;
             }
-        }
+        }   Console.WriteLine("\nPress any key!");
+            Console.ReadKey();
+            } catch(Exception ex) {
+                   Console.WriteLine(ex.Message);
+            Console.WriteLine("\nPress any key!");
+            Console.ReadKey();
+            }
+      
+       
     }
     static void NewThread(string threadIndex) {
         Console.WriteLine("New thread  : Thread[{0}, 5, main]",threadIndex);

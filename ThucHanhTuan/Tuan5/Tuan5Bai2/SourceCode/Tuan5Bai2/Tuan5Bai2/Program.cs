@@ -15,11 +15,12 @@ namespace Tuan5Bai2 {
                 Test_Tutors(objTutors);
 
                 Console.WriteLine("You have exited the program!");
-                Console.WriteLine("Press any key!");
-                Console.ReadKey();
+              Console.WriteLine("\nPress any key!");
+            Console.ReadKey();
             } catch(Exception e) {
                 Console.WriteLine(e.Message);
-                Console.ReadKey();
+                 Console.WriteLine("\nPress any key!");
+            Console.ReadKey();
             }
         }
         public static Tutors GetInputTutors() {

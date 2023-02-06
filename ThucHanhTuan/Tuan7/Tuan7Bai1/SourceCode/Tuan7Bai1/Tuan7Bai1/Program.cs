@@ -11,12 +11,13 @@ namespace Tuan7Bai1 {
                 Console.OutputEncoding=Encoding.UTF8;
                 SelectMenu();
                 Console.WriteLine("You have exited the program!");
-                Console.WriteLine("Press any key!");
-                Console.ReadKey();
+                 Console.WriteLine("\nPress any key!");
+            Console.ReadKey();
             } catch(Exception ex) {
                 Console.WriteLine("Đã xảy ra lỗi. Vui lòng thử lại sau!");
                 Console.WriteLine(ex.Message);
-            }
+            Console.WriteLine("\nPress any key!");
+            Console.ReadKey();   }
         }
         public static void PrintMenu() {
             Console.Clear();

@@ -5,7 +5,10 @@ using System.Text;
 namespace Tuan6Bai1 {
     internal class Program {
         static void Main(string[] args) {
-            Console.OutputEncoding=Encoding.UTF8;
+         
+            try {
+               
+             Console.OutputEncoding=Encoding.UTF8;
             Console.Title="Vũ Văn Nghĩa 20206205";
 
             List<double> Temperatures = new List<double>();
@@ -44,9 +47,16 @@ namespace Tuan6Bai1 {
 
 
             Console.WriteLine("You have exited the program!");
-            Console.WriteLine("Press any key!");
+             Console.WriteLine("\nPress any key!");
             Console.ReadKey();
-        }
+     
+            } catch(Exception ex) {
+                   Console.WriteLine(ex.Message);
+            Console.WriteLine("\nPress any key!");
+            Console.ReadKey();
+            }
+      
+          }
         // số lượng phần tử của danh sách mà lớn hơn hoặc bằng min.
         public static int GreaterCount(List<double> _iList,double min) {
             int countEqualOrGreaterThan_min = 0;

@@ -5,7 +5,10 @@ using System.Threading;
 using System.IO;
 class Session8 {
     static void Main(string[] args) {
-        Console.OutputEncoding=Encoding.Unicode;
+     
+            try {
+               
+             Console.OutputEncoding=Encoding.Unicode;
         Console.InputEncoding=Encoding.Unicode;
         Console.Write("Number of messages: ");
         int numOfMess = int.Parse(Console.ReadLine());
@@ -24,7 +27,15 @@ class Session8 {
         Console.WriteLine("Result: ");
         foreach(var thread in arrThread) {
             thread.Start();
-        }
+        }   Console.WriteLine("\nPress any key!");
+            Console.ReadKey();
+            } catch(Exception ex) {
+                   Console.WriteLine(ex.Message);
+            Console.WriteLine("\nPress any key!");
+            Console.ReadKey();
+            }
+      
+       
     }
 
     static void NewThread(string Mess,int TimeOut,string Priority) {

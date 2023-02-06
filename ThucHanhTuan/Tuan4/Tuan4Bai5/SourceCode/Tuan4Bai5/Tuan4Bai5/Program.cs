@@ -7,7 +7,10 @@ namespace Tuan4Bai5
     {
         static void Main(string[] args)
         {
-            Console.OutputEncoding = Encoding.UTF8;
+           
+            try {
+               
+           Console.OutputEncoding = Encoding.UTF8;
             Console.WriteLine("Viết một chương trình Test để kiểm tra tất cả các hành vi (phương thức, toán tử) của lớp này.\n");
             Console.WriteLine("ĐA THỨC:");
 
@@ -55,6 +58,13 @@ namespace Tuan4Bai5
 
             Console.WriteLine("\nPress any key!");
             Console.ReadKey();
+       
+            } catch(Exception ex) {
+                   Console.WriteLine(ex.Message);
+            Console.WriteLine("\nPress any key!");
+            Console.ReadKey();
+            }
+      
         }
     }
 }

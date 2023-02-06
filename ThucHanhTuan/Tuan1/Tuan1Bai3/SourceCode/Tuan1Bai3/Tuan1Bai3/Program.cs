@@ -3,7 +3,10 @@ using System.Text;
 namespace Tuan1Bai3 {
     internal class Program {
         static void Main(string[] args) {
-            Console.OutputEncoding=Encoding.UTF8;
+         
+            try {
+               
+             Console.OutputEncoding=Encoding.UTF8;
 
             Console.WriteLine("Chương trình tính tổng từ begin đến end:");
 
@@ -16,8 +19,16 @@ namespace Tuan1Bai3 {
             Sum _Sum = new Sum(_inputBegin,_inputEnd);
             Console.WriteLine(_Sum.FindSum());
 
-            Console.WriteLine("Nhấn phím bất kì!");
+         
+            Console.WriteLine("\nPress any key!");
             Console.ReadKey();
-        }
+     
+            } catch(Exception ex) {
+                   Console.WriteLine(ex.Message);
+            Console.WriteLine("\nPress any key!");
+            Console.ReadKey();
+            }
+      
+          }
     }
 }

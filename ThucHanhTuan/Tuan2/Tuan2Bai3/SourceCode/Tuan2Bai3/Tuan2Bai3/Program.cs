@@ -7,11 +7,22 @@ namespace Tuan2Bai3
     {
         static void Main(string[] args)
         {
+            try {
+               
+          
             Console.OutputEncoding = Encoding.UTF8;
             Menu();
-            Console.WriteLine("\nNhấn phím bất kì để kết thúc chương trình!");
+          
+            Console.WriteLine("\nPress any key!");
             Console.ReadKey();
-        }
+    
+            } catch(Exception ex) {
+                   Console.WriteLine(ex.Message);
+            Console.WriteLine("\nPress any key!");
+            Console.ReadKey();
+            }
+      
+           }
         public static void Menu()
         {
             int luachon;
@@ -34,8 +45,9 @@ namespace Tuan2Bai3
                         PT1.NhapPhuongTrinh();
                         PT1.XuatPhuongTrinh();
                         PT1.GiaiPhuongTrinh();
-                        Console.WriteLine("\nNhấn phím bất kì để tiếp tục!");
-                        Console.ReadKey();
+                      
+            Console.WriteLine("\nPress any key!");
+            Console.ReadKey();
                         break;
                     case 2:
                         Console.Clear();
@@ -43,8 +55,9 @@ namespace Tuan2Bai3
                         PT2.NhapPhuongTrinh();
                         PT2.XuatPhuongTrinh();
                         PT2.GiaiPhuongTrinh();
-                        Console.WriteLine("\nNhấn phím bất kì để tiếp tục!");
-                        Console.ReadKey();
+                      
+            Console.WriteLine("\nPress any key!");
+            Console.ReadKey();
                         break;
                 }
             } while (luachon != 0);

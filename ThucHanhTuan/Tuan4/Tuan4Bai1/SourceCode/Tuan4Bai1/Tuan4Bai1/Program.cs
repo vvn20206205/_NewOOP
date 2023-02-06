@@ -7,6 +7,9 @@ namespace Tuan4Bai1
     {
         static void Main(string[] args)
         {
+          
+            try {
+               
             Console.OutputEncoding = Encoding.UTF8;
             Console.WriteLine("Constructor – không tham số:");
             CSinhVien test1 = new CSinhVien();
@@ -58,8 +61,15 @@ namespace Tuan4Bai1
             Console.WriteLine("test9 + test10: ");
             Console.WriteLine((test9 + test10).ToString());
 
-            Console.WriteLine("Press any key!");
+             Console.WriteLine("\nPress any key!");
             Console.ReadKey();
-        }
+      
+            } catch(Exception ex) {
+                   Console.WriteLine(ex.Message);
+            Console.WriteLine("\nPress any key!");
+            Console.ReadKey();
+            }
+      
+         }
     }
 }

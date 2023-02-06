@@ -5,7 +5,10 @@ using System.Text;
 namespace Tuan6Bai2 {
     internal class Program {
         static void Main(string[] args) {
-            Console.OutputEncoding=Encoding.UTF8;
+        
+            try {
+               
+              Console.OutputEncoding=Encoding.UTF8;
             Console.Title="Vũ Văn Nghĩa 20206205";
             // Gọi phương thức đó trên một mảng kiểu double.
             double[] MyArray = { 1.5,2.5,3.5,4.5 };
@@ -27,9 +30,16 @@ namespace Tuan6Bai2 {
             Console.WriteLine($"Tổng số phần tử của MyArray lớn hơn hoặc bằng {_test} là: {GreaterCount(MyArray,_test)}");
 
             Console.WriteLine("You have exited the program!");
-            Console.WriteLine("Press any key!");
+            Console.WriteLine("\nPress any key!");
             Console.ReadKey();
-        }
+   
+            } catch(Exception ex) {
+                   Console.WriteLine(ex.Message);
+            Console.WriteLine("\nPress any key!");
+            Console.ReadKey();
+            }
+      
+            }
         // trả về số lượng phân tử của một enumerable mà lớn hơn hoặc bằng min.
         public static int GreaterCount(IEnumerable<double> eble,double min) {
             int countEqualOrGreaterThan_min = 0;

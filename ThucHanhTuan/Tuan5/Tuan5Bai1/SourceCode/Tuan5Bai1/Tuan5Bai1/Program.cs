@@ -13,11 +13,16 @@ namespace Tuan5Bai1 {
                 SelectMenu();
 
                 Console.WriteLine("You have exited the program!");
-                Console.WriteLine("Press any key!");
-                Console.ReadKey();
-            } catch(Exception e) {
-                Console.WriteLine(e.Message);
+               Console.WriteLine("\nPress any key!");
+            Console.ReadKey();
+         
+            } catch(Exception ex) {
+                   Console.WriteLine(ex.Message);
+            Console.WriteLine("\nPress any key!");
+            Console.ReadKey();
             }
+      
+       
         }
         public static void SelectMenu() {
             Customer objCustomer = new Customer();

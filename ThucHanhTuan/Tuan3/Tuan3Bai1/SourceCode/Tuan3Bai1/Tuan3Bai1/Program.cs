@@ -7,6 +7,9 @@ namespace Tuan3Bai1
     {
         static void Main(string[] args)
         {
+            try {
+               
+          
             Console.OutputEncoding = Encoding.UTF8;
             Console.WriteLine("2. Viết một chương trình Test để kiểm tra tất cả các hành vi của  Circle class!\n");
             Circle test1 = new Circle(5.5);
@@ -27,6 +30,13 @@ namespace Tuan3Bai1
 
             Console.WriteLine("\nPress any key!");
             Console.ReadKey();
+       
+            } catch(Exception ex) {
+                   Console.WriteLine(ex.Message);
+            Console.WriteLine("\nPress any key!");
+            Console.ReadKey();
+            }
+      
         }
     }
 }

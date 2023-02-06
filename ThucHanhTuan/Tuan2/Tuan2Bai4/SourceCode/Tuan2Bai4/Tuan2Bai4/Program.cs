@@ -7,7 +7,10 @@ namespace Tuan2Bai4 {
     internal class Program {
 
         static void Main(string[] args) {
-            Console.OutputEncoding=Encoding.UTF8;
+      
+            try {
+               
+                Console.OutputEncoding=Encoding.UTF8;
 
             // Hình tròn 
             CHinhTron _hinhtron = new CHinhTron(5);
@@ -22,9 +25,17 @@ namespace Tuan2Bai4 {
             CHinhTamGiac _hinhtamgiac = new CHinhTamGiac(3,4,5);
             InThongTin(_hinhtamgiac);
 
-            Console.WriteLine("Press any key!");
+    
+            Console.WriteLine("\nPress any key!");
             Console.ReadKey();
-        }
+   
+            } catch(Exception ex) {
+                   Console.WriteLine(ex.Message);
+            Console.WriteLine("\nPress any key!");
+            Console.ReadKey();
+            }
+      
+            }
 
         static void InThongTin(CHinh iHinh) {
             foreach(var _item in iHinh.Display()) {

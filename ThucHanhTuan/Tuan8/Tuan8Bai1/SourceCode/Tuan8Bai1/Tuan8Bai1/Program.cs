@@ -8,6 +8,9 @@ namespace ConsoleApplication {
         public static extern int GetComputerName(StringBuilder buffer,ref int size);
 
         static void Main(string[] args) {
+          
+            try {
+               
             StringBuilder computerName = new StringBuilder();
 
             int size = computerName.Capacity;
@@ -20,6 +23,15 @@ namespace ConsoleApplication {
             }
 
             Console.WriteLine("Computer name: "+computerName);
+               Console.WriteLine("\nPress any key!");
+            Console.ReadKey();
+            } catch(Exception ex) {
+                   Console.WriteLine(ex.Message);
+            Console.WriteLine("\nPress any key!");
+            Console.ReadKey();
+            }
+      
+       
         }
     }
 }

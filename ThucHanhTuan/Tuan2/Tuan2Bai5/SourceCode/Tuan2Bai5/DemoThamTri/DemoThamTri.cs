@@ -7,11 +7,21 @@ namespace Tuan2Bai5
     {
         static void Main(string[] args)
         {
-            Console.OutputEncoding = Encoding.UTF8;
+         
+            try {
+               
+             Console.OutputEncoding = Encoding.UTF8;
             DemoThamTri();
             Console.WriteLine("\nPress any key!");
             Console.ReadKey();
-        }
+    
+            } catch(Exception ex) {
+                   Console.WriteLine(ex.Message);
+            Console.WriteLine("\nPress any key!");
+            Console.ReadKey();
+            }
+      
+           }
 
         public static void SwapThamTri( int a,  int b)
         {

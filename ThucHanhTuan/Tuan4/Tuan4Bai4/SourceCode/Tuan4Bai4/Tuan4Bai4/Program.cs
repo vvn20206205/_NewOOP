@@ -8,6 +8,9 @@ namespace Tuan4Bai4
     {
         static void Main(string[] args)
         {
+            try {
+               
+          
             Console.OutputEncoding = Encoding.UTF8;
             Console.WriteLine("Viết một chương trình Test để kiểm tra tất cả các hành vi, thuộc tính (khởi tạo, phương thức, toán tử) của lớp này.\n");
             Console.Write("Phần tử đơn vị 0 là: ");
@@ -33,6 +36,13 @@ namespace Tuan4Bai4
 
             Console.WriteLine("\nPress any key!");
             Console.ReadKey();
-        }
+     
+            } catch(Exception ex) {
+                   Console.WriteLine(ex.Message);
+            Console.WriteLine("\nPress any key!");
+            Console.ReadKey();
+            }
+      
+          }
     }
 }

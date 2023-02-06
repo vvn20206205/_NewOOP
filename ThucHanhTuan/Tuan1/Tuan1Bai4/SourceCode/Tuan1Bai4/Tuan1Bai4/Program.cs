@@ -4,7 +4,10 @@ using System.Text;
 namespace Tuan1Bai4 {
     internal class Program {
         static void Main(string[] args) {
-            Console.OutputEncoding=Encoding.UTF8;
+       
+            try {
+               
+               Console.OutputEncoding=Encoding.UTF8;
             Console.WriteLine("Chương trình giải phương trình bậc hai");
             Console.WriteLine("ax^2 + bx + c = 0");
             float _inputQuadraticFactor2, _inputQuadraticFactor1, _inputQuadraticFactor0;
@@ -22,9 +25,17 @@ namespace Tuan1Bai4 {
             QuadraticEquation _QuadraticEquation = new QuadraticEquation(_inputQuadraticFactor2,_inputQuadraticFactor1,_inputQuadraticFactor0);
             Console.WriteLine(_QuadraticEquation.SolveQuadraticEquation());
 
-            Console.WriteLine("\nNhấn phím bất kì!");
+       
+            Console.WriteLine("\nPress any key!");
             Console.ReadKey();
-        }
+   
+            } catch(Exception ex) {
+                   Console.WriteLine(ex.Message);
+            Console.WriteLine("\nPress any key!");
+            Console.ReadKey();
+            }
+      
+            }
 
     }
 }

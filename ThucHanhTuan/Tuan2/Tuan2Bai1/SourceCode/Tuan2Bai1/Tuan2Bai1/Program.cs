@@ -5,13 +5,24 @@ namespace Tuan2Bai1 {
       private  static List<Atom> AtomList = new List<Atom>();
         private static int NumberOfAtoms;
         static void Main(string[] args) {
-            Console.OutputEncoding=Encoding.UTF8;
+       
+            try {
+               
+               Console.OutputEncoding=Encoding.UTF8;
             Input();
             Output();
 
-            Console.WriteLine("Press any key!");
+           
+            Console.WriteLine("\nPress any key!");
             Console.ReadKey();
-        }
+   
+            } catch(Exception ex) {
+                   Console.WriteLine(ex.Message);
+            Console.WriteLine("\nPress any key!");
+            Console.ReadKey();
+            }
+      
+            }
         public static void Input() {
             Console.WriteLine("Atomic Information");
             Console.WriteLine("=====================================================");

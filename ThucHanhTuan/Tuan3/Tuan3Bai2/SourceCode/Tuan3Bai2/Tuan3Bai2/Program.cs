@@ -3,8 +3,11 @@ namespace Tuan3Bai1
 {
     internal class Program
     {
+               
+          
         static void Main(string[] args)
         {
+            try {
             Console.OutputEncoding = Encoding.UTF8;
             Student test1 = new Student("Vũ Văn Nghĩa test 1", "0397562283 test 1", "nghia test 1@gmail.com", "Toán Tin");
             Console.WriteLine(test1.ToString());
@@ -18,6 +21,13 @@ namespace Tuan3Bai1
             Console.WriteLine(test4.ToString());
             Console.WriteLine("\nPress any key!"); 
             Console.ReadKey();
-        }
+      
+            } catch(Exception ex) {
+                   Console.WriteLine(ex.Message);
+            Console.WriteLine("\nPress any key!");
+            Console.ReadKey();
+            }
+      
+         }
     }
 }
