@@ -8,13 +8,13 @@ namespace Tuan1Bai3 {
             Console.WriteLine("Chương trình tính tổng từ begin đến end:");
 
             Console.Write("Nhập giá trị begin = ");
-            int _begin = Int32.Parse(Console.ReadLine());
+            int _inputBegin = Int32.Parse(Console.ReadLine());
 
             Console.Write("Nhập giá trị end = ");
-            int _end = Int32.Parse(Console.ReadLine());
+            int _inputEnd = Int32.Parse(Console.ReadLine());
 
-            Sum _sum = new Sum(_begin,_end);
-            Console.WriteLine(_sum.FindSum());
+            Sum _Sum = new Sum(_inputBegin,_inputEnd);
+            Console.WriteLine(_Sum.FindSum());
 
             Console.WriteLine("Nhấn phím bất kì!");
             Console.ReadKey();
