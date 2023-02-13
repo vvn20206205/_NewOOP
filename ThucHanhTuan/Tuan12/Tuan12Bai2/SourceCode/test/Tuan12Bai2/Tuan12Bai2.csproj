@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{AC6DD0BA-4A8F-4B06-94CD-02415E6019CA}</ProjectGuid>
+    <ProjectGuid>{704702AA-6F71-4470-8AA3-32E2FA37ABC1}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <RootNamespace>WindowsFormsApp1</RootNamespace>
-    <AssemblyName>WindowsFormsApp1</AssemblyName>
+    <RootNamespace>Tuan12Bai2</RootNamespace>
+    <AssemblyName>Tuan12Bai2</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -46,25 +46,25 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="MDIContainer.cs">
+    <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="MDIContainer.Designer.cs">
-      <DependentUpon>MDIContainer.cs</DependentUpon>
-    </Compile>
-    <Compile Include="MyForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="MyForm.Designer.cs">
-      <DependentUpon>MyForm.cs</DependentUpon>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="MDIContainer.resx">
-      <DependentUpon>MDIContainer.cs</DependentUpon>
+    <Compile Include="LogInControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="LogInControl.Designer.cs">
+      <DependentUpon>LogInControl.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="MyForm.resx">
-      <DependentUpon>MyForm.cs</DependentUpon>
+    <EmbeddedResource Include="LogInControl.resx">
+      <DependentUpon>LogInControl.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

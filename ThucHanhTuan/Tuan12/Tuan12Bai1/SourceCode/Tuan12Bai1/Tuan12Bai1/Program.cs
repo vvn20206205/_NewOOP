@@ -13,7 +13,7 @@ namespace Tuan12Bai1 {
         static void Main() {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new MDIContainer());
+            Application.Run(new frmMDIContainer());
         }
     }
 }

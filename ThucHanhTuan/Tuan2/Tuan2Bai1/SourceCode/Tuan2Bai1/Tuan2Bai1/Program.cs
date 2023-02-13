@@ -2,8 +2,15 @@
 using System.Text;
 namespace Tuan2Bai1 {
     internal class Program {
-      private  static List<Atom> AtomList = new List<Atom>();
+        #region Fields
+        private static List<Atom> AtomList = new List<Atom>();
         private static int NumberOfAtoms;
+        #endregion
+        #region Properties
+        #endregion
+        #region Constructor
+        #endregion
+        #region Methods
         static void Main(string[] args) {
        
             try {
@@ -61,5 +68,6 @@ namespace Tuan2Bai1 {
                 Console.WriteLine(AtomList[i].Display());
             }
         }
+        #endregion 
     }
 }

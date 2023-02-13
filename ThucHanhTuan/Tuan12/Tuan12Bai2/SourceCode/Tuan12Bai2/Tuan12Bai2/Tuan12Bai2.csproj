@@ -4,7 +4,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{704702AA-6F71-4470-8AA3-32E2FA37ABC1}</ProjectGuid>
+    <ProjectGuid>{CD4B436E-1C75-48C2-910C-B84F26058F5F}</ProjectGuid>
     <OutputType>WinExe</OutputType>
     <RootNamespace>Tuan12Bai2</RootNamespace>
     <AssemblyName>Tuan12Bai2</AssemblyName>
@@ -52,19 +52,19 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
-    <Compile Include="Program.cs" />
-    <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="LogInControl.cs">
+    <Compile Include="NghiaUserControlLogin.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="LogInControl.Designer.cs">
-      <DependentUpon>LogInControl.cs</DependentUpon>
+    <Compile Include="NghiaUserControlLogin.Designer.cs">
+      <DependentUpon>NghiaUserControlLogin.cs</DependentUpon>
     </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="LogInControl.resx">
-      <DependentUpon>LogInControl.cs</DependentUpon>
+    <EmbeddedResource Include="NghiaUserControlLogin.resx">
+      <DependentUpon>NghiaUserControlLogin.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

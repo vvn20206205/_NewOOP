@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace WindowsFormsApp1.Properties {
+namespace Tuan12Bai2.Properties {
 
 
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]

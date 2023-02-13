@@ -1,22 +1,28 @@
 ﻿using System;
 internal class QuadraticEquation {
+    #region Fields
     private Complex quadraticFactor2;
     private Complex quadraticFactor1;
     private Complex quadraticFactor0;
-
+    #endregion
+    #region Properties
     protected Complex QuadraticFactor2 { get => quadraticFactor2; set => quadraticFactor2=value; }
     protected Complex QuadraticFactor1 { get => quadraticFactor1; set => quadraticFactor1=value; }
     protected Complex QuadraticFactor0 { get => quadraticFactor0; set => quadraticFactor0=value; }
 
+    #endregion
+    #region Constructor
     public QuadraticEquation() {
     }
     public QuadraticEquation(Complex iQquadraticFactor2,Complex iQquadraticFactor1,Complex iQquadraticFactor0) {
         quadraticFactor2=iQquadraticFactor2;
         quadraticFactor1=iQquadraticFactor1;
         quadraticFactor0=iQquadraticFactor0;
-    } 
+    }
+    #endregion
+    #region Methods
     public string Display() {
-    return("Phương trình đã nhập là: \n"+ToString());
+        return ("Phương trình đã nhập là: \n"+ToString());
     }
     //Giải phương trình 
     public virtual string SolveQuadraticEquation() {
@@ -59,11 +65,17 @@ internal class QuadraticEquation {
             }
         }
     }
-    override public string ToString() {
+    public override string ToString() {
         string _OutputString = "";
         _OutputString+=QuadraticFactor2.ToString()+" x^2 + ";
         _OutputString+=QuadraticFactor1.ToString()+" x + ";
         _OutputString+=QuadraticFactor0.ToString()+" = 0";
         return _OutputString;
     }
+    #endregion
+    #region Operator
+    #endregion
+    #region Events
+    #endregion
+
 }

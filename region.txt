@@ -1,0 +1,24 @@
+1codeing convention xong
+foreach
+console+outline
+2region+KD
+3run+ảnh
+
+#region Fields
+#endregion
+#region Properties
+#endregion
+#region Constructor
+#endregion
+#region Methods
+#endregion
+#region Operator
+#endregion
+#region Events
+#endregion
+
+Em thưa thầy, các bài thực hành hàng tuần môn "Lập trình hướng đối tượng". 
+Thầy đã chấm điểm chưa?
+Nếu rồi, em hy vọng thầy có thể chấm lại bài của em được không. 
+Em muốn coding convention lại tất cả các bài.
+Em cảm ơn thầy!

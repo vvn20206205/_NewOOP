@@ -6,18 +6,25 @@ using System.Threading.Tasks;
 
 namespace Tuan1Bai4 {
     class QuadraticEquation {
+        #region Fields
         private float quadraticFactor2;
         private float quadraticFactor1;
         private float quadraticFactor0;
+        #endregion
+        #region Properties
         public float QuadraticFactor2 { get => quadraticFactor2; set => quadraticFactor2=value; }
         public float QuadraticFactor1 { get => quadraticFactor1; set => quadraticFactor1=value; }
         public float QuadraticFactor0 { get => quadraticFactor0; set => quadraticFactor0=value; }
 
+        #endregion
+        #region Constructor
         public QuadraticEquation(float iQquadraticFactor2,float iQquadraticFactor1,float iQquadraticFactor0) {
             quadraticFactor2=iQquadraticFactor2;
             quadraticFactor1=iQquadraticFactor1;
             quadraticFactor0=iQquadraticFactor0;
         }
+        #endregion
+        #region Methods
         public string SolveQuadraticEquation() {
             if(QuadraticFactor2==0) {
                 if(QuadraticFactor1==0) {
@@ -46,6 +53,11 @@ namespace Tuan1Bai4 {
                 }
             }
         }
+        #endregion
+        #region Operator
+        #endregion
+        #region Events
+        #endregion
 
     }
 }

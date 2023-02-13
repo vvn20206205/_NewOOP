@@ -1,10 +1,15 @@
 ﻿using System;
 internal class Complex {
+    #region Fields
     private double real;
     private double imaginary;
+    #endregion
+    #region Properties
 
     public double Real { get => real; set => real=value; }
     public double Imaginary { get => imaginary; set => imaginary=value; }
+    #endregion
+    #region Constructor
 
     public Complex() {
         Real=0;
@@ -14,6 +19,8 @@ internal class Complex {
         Real=iReal;
         Imaginary=iImaginary;
     }
+    #endregion
+    #region Methods
     public void SetInputComplex(string iInputString) {
         HandleString(iInputString);
     }
@@ -104,6 +111,8 @@ internal class Complex {
         _oppositeComplex.Imaginary=-Imaginary;
         return _oppositeComplex;
     }
+    #endregion
+    #region Operator
     //Nạp chồng toán tử
     //+, -, x, /,
     public static Complex operator +(Complex iComplex1,Complex iComplex2) {
@@ -134,4 +143,7 @@ internal class Complex {
             return _OutputComplex;
         }
     }
+    #endregion
+    #region Events
+    #endregion
 }

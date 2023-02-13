@@ -1,9 +1,13 @@
 ﻿using System;
 namespace Tuan2Bai4 {
     public class Circle : AShape {
-        private double radius; 
-
+        #region Fields
+        private double radius;
+        #endregion
+        #region Properties
         public double Radius { get => radius; set => radius=value; }
+        #endregion
+        #region Constructor
 
         public Circle() {
         }
@@ -11,6 +15,8 @@ namespace Tuan2Bai4 {
             Radius=iRadius;
         }
 
+        #endregion
+        #region Methods
         public override string ToString() {
             return "Hình tròn có bán kính: "+Radius;
         }
@@ -20,5 +26,11 @@ namespace Tuan2Bai4 {
         public override string GetArea() {
             return "Hình tròn có diện tích: "+Math.PI*Radius*Radius;
         }
+        #endregion
+        #region Operator
+        #endregion
+        #region Events
+        #endregion
+
     }
 }

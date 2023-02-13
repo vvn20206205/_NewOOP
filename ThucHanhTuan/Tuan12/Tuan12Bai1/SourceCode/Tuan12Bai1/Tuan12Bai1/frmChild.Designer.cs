@@ -1,5 +1,5 @@
 ﻿namespace Tuan12Bai1 {
-    partial class FormCon {
+    partial class frmChild {
         /// <summary>
         /// Required designer variable.
         /// </summary>
@@ -23,32 +23,34 @@
         /// the contents of this method with the code editor.
         /// </summary>
         private void InitializeComponent() {
-            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
+            this.txtChild = new System.Windows.Forms.RichTextBox();
             this.SuspendLayout();
             // 
-            // richTextBox1
+            // txtChild
             // 
-            this.richTextBox1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.richTextBox1.Location = new System.Drawing.Point(0, 0);
-            this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.Size = new System.Drawing.Size(800, 450);
-            this.richTextBox1.TabIndex = 0;
-            this.richTextBox1.Text = "";
+            this.txtChild.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.txtChild.Location = new System.Drawing.Point(0, 0);
+            this.txtChild.Name = "txtChild";
+            this.txtChild.Size = new System.Drawing.Size(800, 450);
+            this.txtChild.TabIndex = 0;
+            this.txtChild.Text = "";
             // 
-            // FormCon
+            // frmChild
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.richTextBox1);
-            this.Name = "FormCon";
-            this.Text = "FormCon";
+            this.Controls.Add(this.txtChild);
+            this.Name = "frmChild";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Vũ Văn Nghĩa 20206205";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private System.Windows.Forms.RichTextBox richTextBox1;
+        public System.Windows.Forms.RichTextBox txtChild;
     }
 }

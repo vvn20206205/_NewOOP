@@ -4,7 +4,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{18F53F41-F2FC-4220-B56F-D2E3B20A534B}</ProjectGuid>
+    <ProjectGuid>{6B1BB8A2-93AD-464B-8668-9B337A32A004}</ProjectGuid>
     <OutputType>WinExe</OutputType>
     <RootNamespace>Tuan12Bai1</RootNamespace>
     <AssemblyName>Tuan12Bai1</AssemblyName>
@@ -46,25 +46,25 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Form1.cs">
+    <Compile Include="frmChild.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="frmChild.Designer.cs">
+      <DependentUpon>frmChild.cs</DependentUpon>
     </Compile>
-    <Compile Include="FormCon.cs">
+    <Compile Include="frmMDIContainer.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FormCon.Designer.cs">
-      <DependentUpon>FormCon.cs</DependentUpon>
+    <Compile Include="frmMDIContainer.Designer.cs">
+      <DependentUpon>frmMDIContainer.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <EmbeddedResource Include="frmChild.resx">
+      <DependentUpon>frmChild.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FormCon.resx">
-      <DependentUpon>FormCon.cs</DependentUpon>
+    <EmbeddedResource Include="frmMDIContainer.resx">
+      <DependentUpon>frmMDIContainer.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -87,6 +87,11 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="MyImg\Save.png" />
+    <Content Include="MyImg\Open.png" />
+    <Content Include="MyImg\New.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

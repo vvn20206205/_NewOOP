@@ -1,17 +1,24 @@
 ﻿using System; 
-public class Atom { 
+public class Atom {
+    #region Fields
     private string atomicNumber;
     private string symbol;
     private string fullName;
     private string atomicWeight;
-
+    #endregion
+    #region Properties
     public string AtomicNumber { get => atomicNumber; set => atomicNumber=value; }
     public string Symbol { get => symbol; set => symbol=value; }
     public string FullName { get => fullName; set => fullName=value; }
     public string AtomicWeight { get => atomicWeight; set => atomicWeight=value; }
 
+    #endregion
+    #region Constructor
     public Atom() {
-    } 
+    }
+    #endregion
+    #region Methods
+
     public bool Accept() {
         int _atomicNumber;
         if(!int.TryParse(AtomicNumber,out _atomicNumber)) { 
@@ -32,4 +39,5 @@ public class Atom {
     public string Display() {
         return $"{AtomicNumber}\t\t{Symbol}\t{FullName}\t\t{AtomicWeight}";
     }
+    #endregion
 }
